@@ -1,3 +1,10 @@
+ *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 :root {
         --green-deep: #1a3a2a;
         --green-mid: #2b5c40;
