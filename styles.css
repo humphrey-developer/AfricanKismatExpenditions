@@ -4,7 +4,10 @@
   display: grid;
   place-items: center;
   text-align: center;
-  color: #960ab3;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 40px;
+  color: #07ca48;
   animation: slide 12s infinite
 }
 /* PUTING A SLIDESHOW IMAGE OF MY HERO  */
