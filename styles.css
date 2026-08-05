@@ -64,6 +64,7 @@
   width: 100%;
   margin-top: 15px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .contact-container button:hover {
