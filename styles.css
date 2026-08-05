@@ -1,9 +1,18 @@
 /* HERO SECTION */
 .hero {
-  height: 80vh;
-  background: linear-gradient(#0007, #0007), url('hero.jpg') center/cover;
+  height: 80vh;  
   display: grid;
   place-items: center;
   text-align: center;
-  color: #fff;
+  color: #960ab3;
+  animation: slide 12s infinite
 }
+/* PUTING A SLIDESHOW IMAGE OF MY HERO  */
+@keyframes slide {
+    0%, 100% { background: linear-gradient(#0007, #0007), url('images/hero1.jpeg') center/cover; }
+    33%      { background: linear-gradient(#0007, #0007), url('images/hero2.webp') center/cover; }
+    66%      { background: linear-gradient(#0007, #0007), url('images/hero3.webp') center/cover; }
+}
+
+
+
