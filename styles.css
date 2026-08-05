@@ -6,17 +6,24 @@
 
 .contact-container {
   padding: 0px 15px;
-  background-color: #f9f9f9;
+  background-color: #fffbfb;
   max-width: 600px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .contact-container h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #181717;
+  font-size: 16px;
 }
 
 .contact-container label {
