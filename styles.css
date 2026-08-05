@@ -1,4 +1,9 @@
 /* HERO SECTION */
-hero {
-    background-image: url(/images/Hero1.jpeg);
+.hero {
+  height: 80vh;
+  background: linear-gradient(#0007, #0007), url('hero.jpg') center/cover;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
 }
