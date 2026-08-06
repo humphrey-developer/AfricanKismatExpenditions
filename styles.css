@@ -215,6 +215,10 @@ header {
   transform: scale(0.8);
 }
 /* HERO SECTION */
+
+body {
+  background-color: #5a6e5d;
+}
 #mainHero {
   height: 80vh;  
   display: grid;
@@ -291,7 +295,7 @@ h2 {
   color:#eb085f
 }
 .why-item p {
-  color: #475569;
+  color: #134385;
   font-size: 0.95rem;
   line-height: 1.5;
 }
