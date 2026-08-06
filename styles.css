@@ -24,11 +24,16 @@
     color:#bdff9f
     
 }
-h1 {
+h2 {
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;  
     font-size: 38px;
+    font-style: italic;
+    color: #07ca48;
+    text-decoration: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: black;
 }
 
 .hero ol img {
@@ -37,9 +42,10 @@ h1 {
 }
 .hero ol {
     display:flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    gap:15px;
+    gap: 20px;
     list-style: none;    
 } 
 .hero ol p {
