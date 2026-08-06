@@ -5,8 +5,8 @@
   place-items: center;
   text-align: center;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  font-size: 40px;
+  font-weight: bolder;  
+  font-size: 38px;
   color: #07ca48;
   animation: slide 12s infinite
 }
@@ -15,6 +15,14 @@
     0%, 100% { background: linear-gradient(#0007, #0007), url('images/hero1.jpeg') center/cover; }
     33%      { background: linear-gradient(#0007, #0007), url('images/hero2.webp') center/cover; }
     66%      { background: linear-gradient(#0007, #0007), url('images/hero3.webp') center/cover; }
+}
+
+.hero p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bolder;    
+    color:#bdff9f
+    
 }
 
 
