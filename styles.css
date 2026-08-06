@@ -67,12 +67,12 @@
 
 .contact-container input:focus,
 .contact-container textarea:focus {
-  border-color: #007BFF;
+  border-color: #00ff6a;
   outline: none;
 }
 
 .contact-container button {
-  background-color: #007BFF;
+  background-color: #139b40;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -87,5 +87,5 @@
 }
 
 .contact-container button:hover {
-  background-color: #0056b3;
+  background-color: #00b318;
 }
