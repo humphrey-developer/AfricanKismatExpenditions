@@ -262,7 +262,7 @@ h2 {
 }
 .hero ol {
     display:flex;
-    justify-content: center;
+    justify-content: center; 
     text-align: center;
     align-items: center;
     gap: 20px;
