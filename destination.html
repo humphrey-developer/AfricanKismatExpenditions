@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Wanderlust Travels</div>
+      
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        
+        <!-- Destinations Dropdown Item -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="destinationsBtn">
+            Destinations <span class="arrow">&#9662;</span>
+          </a>
+          <!-- Dropdown Menu List -->
+          <ul class="dropdown-menu">
+            <li><a href="#france">France</a></li>
+            <li><a href="#indonesia">Indonesia</a></li>
+            <li><a href="#uae">UAE</a></li>
+            <li><a href="#japan">Japan</a></li>
+            <li><a href="#italy">Italy</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Destination Cards Grid -->
+<div class="destinations-grid">
+  <!-- Card 1: France -->
+  <div class="card" data-country="france" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris, France">
+        <div class="card-title">Paris, France</div>
+      </div>
+      <div class="card-back">
+        <h3>Paris, France</h3>
+        <p>Explore the City of Lights, famous for the Eiffel Tower and world-class museums.</p>
+        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2: Indonesia -->
+  <div class="card" data-country="indonesia" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali, Indonesia">
+        <div class="card-title">Bali, Indonesia</div>
+      </div>
+      <div class="card-back">
+        <h3>Bali, Indonesia</h3>
+        <p>Experience tropical beaches, lush rice terraces, and ancient temples.</p>
+        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card 3: UAE -->
+  <div class="card" data-country="uae" onclick="flipCard(this)">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai, UAE">
+        <div class="card-title">Dubai, UAE</div>
+      </div>
+      <div class="card-back">
+        <h3>Dubai, UAE</h3>
+        <p>Discover futuristic architecture, luxury shopping, and desert safaris.</p>
+        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
