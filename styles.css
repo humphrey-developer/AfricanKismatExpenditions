@@ -123,3 +123,99 @@ header {
   opacity: 0;
   transform: scale(0.8);
 }
+/* HERO SECTION */
+#mainHero {
+  height: 80vh;  
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;  
+  font-size: 38px;
+  color: #07ca48;
+  animation: slide 12s infinite
+}
+/* PUTING A SLIDESHOW IMAGE OF MY HERO  */
+@keyframes slide {
+    0%, 100% { background: linear-gradient(#0007, #0007), url('images/hero1.jpeg') center/cover; }
+    33%      { background: linear-gradient(#0007, #0007), url('images/hero2.webp') center/cover; }
+    66%      { background: linear-gradient(#0007, #0007), url('images/hero3.webp') center/cover; }
+}
+
+.hero p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bolder;    
+    color:#bdff9f
+    
+}
+h2 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;  
+    font-size: 38px;
+    font-style: italic;
+    color: #07ca48;
+    text-decoration: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+.hero ol img {
+    height: 400px;
+    width: 500px;
+}
+.hero ol {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;    
+} 
+.hero ol p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #eb085f; 
+}  
+/* WHY CHOOSE US SECTION */
+
+.whyUs {
+  margin-top: 5rem;
+  text-align: center;
+  color: #475569;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.why-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color:#eb085f
+}
+.why-item p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* FOOTER STYLING */
+footer p {
+    color:#eb085f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #1a1918;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
