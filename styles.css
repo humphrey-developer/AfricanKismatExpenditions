@@ -59,6 +59,7 @@ h2 {
 .whyUs {
   margin-top: 5rem;
   text-align: center;
+  color: #475569;
 }
 
 .why-grid {
@@ -71,11 +72,23 @@ h2 {
 .why-item h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color:#eb085f
 }
 .why-item p {
   color: #475569;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+/* FOOTER STYLING */
+footer p {
+    color:#1dcad6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #1a1918;
+    font-style: italic;
+    text-align: center;
 }
 
 
