@@ -85,6 +85,7 @@ header {
   color: #38bdf8;
 }
 
+
 /* Desktop Hover Interaction */
 @media (hover: hover) {
   .dropdown:hover .dropdown-menu {
@@ -107,4 +108,18 @@ header {
 
 .dropdown.active .arrow {
   transform: rotate(180deg);
+}
+
+/* Card Filtering Transitions */
+.card {
+  transition: opacity 0.4s ease, transform 0.4s ease, display 0.4s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Class applied when a card is filtered out */
+.card.hide {
+  display: none;
+  opacity: 0;
+  transform: scale(0.8);
 }
