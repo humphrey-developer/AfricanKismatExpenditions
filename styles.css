@@ -196,7 +196,7 @@ body::after {
   min-width: 190px;
   text-decoration: none;
 }
-
+/* Primary button styles */
 .btn-primary {
   background: var(--green);
   color: #06110f;
