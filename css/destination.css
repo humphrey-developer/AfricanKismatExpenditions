@@ -75,7 +75,7 @@ body {
 /* Hero sectiom */
 .hero {
   /* Relative path steps out of css/ to images/ */
-  background: url("../images/leopard.image.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('../images/hero2.webp') center/cover no-repeat; 
   min-height: 90vh;
   position: relative;
 }
@@ -200,7 +200,7 @@ h2 {
 }
 
    /* DESTINATIONS SECTION */
-   ========================================== */
+  
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
