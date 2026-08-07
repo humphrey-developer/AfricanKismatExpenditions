@@ -1,4 +1,4 @@
-/* STEVE */
+/* Body Section */
 :root {
   --text: #ffffff;
   --text-dark: #0f172a;
@@ -20,7 +20,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header & Navigation styles */
+/* Header & Navigation Section */
 .header {
   position: sticky;
   top: 0;
@@ -84,7 +84,7 @@ body {
   box-shadow: 0 6px 16px rgba(19, 155, 64, 0.6);
 }
 
-/* CONTACT SECTION */
+/* Contact Section */
 #contact {
   background: #f1f5f9;
   padding-bottom: 4rem;
@@ -193,7 +193,7 @@ body {
   box-shadow: 0 6px 16px rgba(19, 155, 64, 0.4);
 }
 
-/* FOOTER */
+/* Footer Section */
 footer {
   background: var(--footer-bg);
   color: #94a3b8;
