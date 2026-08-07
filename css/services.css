@@ -1,4 +1,43 @@
 /* HUMPHREY */
+/* Navigation styles */
+.nav-toggle {
+  display: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 1.5rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.22s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--green);
+}
+
+.nav-cta {
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: rgba(127, 207, 107, 0.14);
+  border: 1px solid rgba(127, 207, 107, 0.35);
+}
 /* HERO SECTION */
 
 body {
@@ -18,13 +57,13 @@ body {
  /* PUTING A SLIDESHOW IMAGE OF MY HERO  */
 @keyframes slide {
   0%, 100% { 
-    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('images/hero1.jpeg') center/cover no-repeat; 
+    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('../images/hero1.jpeg') center/cover no-repeat; 
   }
   33% { 
-    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('images/hero2.webp') center/cover no-repeat; 
+    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('../images/hero2.webp') center/cover no-repeat; 
   }
   66% { 
-    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('images/hero3.webp') center/cover no-repeat; 
+    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url('../images/hero3.webp') center/cover no-repeat; 
   }
 }
 .hero p {
