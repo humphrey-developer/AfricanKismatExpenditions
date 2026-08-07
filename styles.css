@@ -75,7 +75,7 @@ body::after {
   color: rgba(244, 242, 234, 0.76);
   font-size: 0.9rem;
 }
-
+/* Navigation styles */
 .nav-toggle {
   display: none;
   border: none;
