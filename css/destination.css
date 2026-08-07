@@ -40,9 +40,7 @@
 }
 
 
-/* ==========================================
-   RESET & COLOR VARIABLES
-   ========================================== */
+/*Colours */
 :root {
   --primary-color: #0b5ed7;
   --accent-color: #ff6600;
@@ -74,10 +72,7 @@ body {
   /* Fixed unreadable lemonchiffon body text */
   line-height: 1.6;
 }
-
-/* ==========================================
-   HERO SECTION
-   ========================================== */
+/* Hero sectiom */
 .hero {
   /* Relative path steps out of css/ to images/ */
   background: url("../images/leopard.image.jpg") center/cover no-repeat;
@@ -124,9 +119,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ==========================================
-   GENERAL CONTAINER & TYPOGRAPHY
-   ========================================== */
+/* General Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -141,9 +134,7 @@ h2 {
   font-size: 2.25rem;
 }
 
-/* ==========================================
-   ABOUT SECTION
-   ========================================== */
+/* About Section */
 .about-content {
   display: flex;
   gap: 30px;
@@ -171,9 +162,7 @@ h2 {
   color: var(--text-dark);
 }
 
-/* ==========================================
-   SERVICES SECTION
-   ========================================== */
+/* Sevices */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -210,8 +199,7 @@ h2 {
   color: #cbd5e1;
 }
 
-/* ==========================================
-   DESTINATIONS SECTION
+   /* DESTINATIONS SECTION */
    ========================================== */
 .destination-grid {
   display: grid;
@@ -243,9 +231,7 @@ h2 {
   border-radius: 5px;
 }
 
-/* ==========================================
-   REVIEWS SECTION
-   ========================================== */
+/* review section */
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -267,9 +253,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* ==========================================
-   FOOTER SECTION
-   ========================================== */
+/* footer section */
 footer {
   background: var(--footer-bg);
   color: var(--text-dark);
@@ -319,9 +303,7 @@ footer p {
   transform: scale(1.1);
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN
-   ========================================== */
+/* Responsive Design */
 @media (max-width: 768px) {
   .overlay h1 {
     font-size: 2.5rem;
@@ -340,3 +322,4 @@ footer p {
     height: auto;
   }
 }
+
