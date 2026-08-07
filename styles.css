@@ -238,7 +238,7 @@ body::after {
   line-height: 1.1;
   font-weight: 700;
 }
-
+/* Responsive styles for smaller screens */
 @media (max-width: 860px) {
   .header-inner {
     flex-direction: column;
