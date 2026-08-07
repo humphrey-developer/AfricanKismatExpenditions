@@ -1,0 +1,293 @@
+/* SOLO  */
+/* Global reset and colors */
+:root {
+  --green: #7fcf6b;
+  --dark: #09120f;
+  --surface: rgba(9, 18, 15, 0.9);
+  --text: #f4f2ea;
+  --muted: rgba(244, 242, 234, 0.72);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Reset default margins and set up the background and font */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(127, 207, 107, 0.12), transparent 40%),
+    #06110f;
+  color: var(--text);
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+/* Set up the background image and overlay for the body */
+body {
+  position: relative;
+}
+
+body > img {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.25) brightness(0.78);
+  z-index: -3;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(55, 128, 52, 0.28);
+  pointer-events: none;
+  z-index: -2;
+}
+/* Header and hero section styles */
+.header,
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  padding: 2rem 1.5rem 0;
+}
+
+.header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header-logo-main {
+  display: block;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.header-logo-sub {
+  display: block;
+  margin-top: 0.25rem;
+  color: rgba(244, 242, 234, 0.76);
+  font-size: 0.9rem;
+}
+/* Navigation styles */
+.nav-toggle {
+  display: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 1.5rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.22s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--green);
+}
+
+.nav-cta {
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: rgba(127, 207, 107, 0.14);
+  border: 1px solid rgba(127, 207, 107, 0.35);
+}
+/* Hero section styles */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.72)),
+    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&q=80")
+      center/cover no-repeat;
+  filter: saturate(1.15);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 840px;
+  width: 100%;
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  backdrop-filter: blur(6px);
+}
+
+.hero-eyebrow {
+  margin: 0 auto 1.1rem;
+  display: inline-flex;
+  color: var(--green);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--green);
+}
+
+.hero-sub {
+  margin: 1.75rem auto 2.25rem;
+  max-width: 680px;
+  color: rgba(244, 242, 234, 0.82);
+  line-height: 1.85;
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Button styles */
+.btn-primary,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  min-width: 190px;
+  text-decoration: none;
+}
+/* Primary button styles */
+.btn-primary {
+  background: var(--green);
+  color: #06110f;
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+/* Hero stamp styles */
+.hero-stamp {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  width: 190px;
+  padding: 1.2rem 1rem;
+  border-radius: 1.6rem;
+  background: rgba(6, 17, 12, 0.72);
+  border: 1px solid rgba(127, 207, 107, 0.18);
+  color: #eef6e8;
+  text-align: center;
+}
+
+.stamp-inner {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.stamp-text-top,
+.stamp-year {
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.stamp-logo-text {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 860px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+/* Adjust hero section for smaller screens */
+  .hero {
+    min-height: 82vh;
+    padding-top: 2.6rem;
+  }
+
+  .hero-stamp {
+    position: static;
+    margin: 2rem auto 0;
+  }
+}
+/* Further adjustments for very small screens */
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 3rem 0.75rem 1.5rem;
+  }
+/* Stack hero actions vertically on small screens */
+  .hero-actions {
+    flex-direction: column;
+  }
+/* Make buttons full width on small screens */
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    min-width: 0;
+  }
+}
+/* footer */
+footer {
+  background: var(--footer-bg);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+
