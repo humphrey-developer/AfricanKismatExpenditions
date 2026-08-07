@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations - African Kismat Expeditions</title>
     <link rel="stylesheet" href="css/destination.css">
+
 </head>
+
 <body>
+    <header class="header">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html" class="nav-cta">Plan a Trip</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- HERO SECTION -->
     <header class="hero">
@@ -23,8 +38,10 @@
         <div class="about-content hidden">
             <img src="../images/leopard.image.jpg" alt="Leopard in African safari">
             <div>
-                <p>Welcome to African Kismat Expeditions. We craft tailor-made safari packages designed to bring you face-to-face with Africa's majestic wildlife and landscapes.</p>
-                <p>Whether you're seeking the thrill of the Great Migration, luxury lodge relaxation, or beach getaways, our expert team manages every detail seamlessly.</p>
+                <p>Welcome to African Kismat Expeditions. We craft tailor-made safari packages designed to bring you
+                    face-to-face with Africa's majestic wildlife and landscapes.</p>
+                <p>Whether you're seeking the thrill of the Great Migration, luxury lodge relaxation, or beach getaways,
+                    our expert team manages every detail seamlessly.</p>
             </div>
         </div>
     </section>
@@ -34,17 +51,20 @@
         <h2 class="hidden">What We Provide</h2>
         <div class="service-grid">
             <div class="card hidden">
-                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Game Drive Safari">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80"
+                    alt="Game Drive Safari">
                 <h3>Custom Game Drives</h3>
                 <p>Private 4x4 safari vehicles accompanied by certified local guides.</p>
             </div>
             <div class="card hidden">
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Luxury Safari Lodge">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+                    alt="Luxury Safari Lodge">
                 <h3>Luxury Accommodation</h3>
                 <p>Hand-picked luxury tented camps and eco-resorts with prime views.</p>
             </div>
             <div class="card hidden">
-                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="Seamless Flights and Transfers">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80"
+                    alt="Seamless Flights and Transfers">
                 <h3>Seamless Transfers</h3>
                 <p>Domestic flights, airport pickups, and regional border logistics simplified.</p>
             </div>
@@ -56,15 +76,18 @@
         <h2 class="hidden">Top Destinations</h2>
         <div class="destination-grid">
             <div class="place hidden">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80" alt="Maasai Mara National Reserve">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80"
+                    alt="Maasai Mara National Reserve">
                 <h3>Maasai Mara, Kenya</h3>
             </div>
             <div class="place hidden">
-                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80" alt="Serengeti National Park">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80"
+                    alt="Serengeti National Park">
                 <h3>Serengeti, Tanzania</h3>
             </div>
             <div class="place hidden">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Zanzibar Island">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                    alt="Zanzibar Island">
                 <h3>Zanzibar, Tanzania</h3>
             </div>
         </div>
@@ -94,35 +117,8 @@
         <p>&copy; 2026 African Kismat Expeditions. All rights reserved.</p>
         <p>Email: info@africankismat.com | Phone: +254 700 000 000</p>
     </footer>
-    <!-- BACK TO TOP BUTTON -->
-    <button id="topBtn" title="Go to top">&#8679;</button>
 
-    <!-- INTERACTION & SCROLL ANIMATION SCRIPT -->
-    <script>
-        // Scroll Fade-In Animation
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.15 });
-
-        document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
-
-        // Back To Top Button Logic
-        const topBtn = document.getElementById("topBtn");
-        window.onscroll = function () {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                topBtn.style.display = "block";
-            } else {
-                topBtn.style.display = "none";
-            }
-        };
-
-        topBtn.addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>

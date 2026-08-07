@@ -1,14 +1,59 @@
+/*  */
+/* Navigation styles */
+.nav-toggle {
+  display: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 1.5rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.22s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--green);
+}
+
+.nav-cta {
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: rgba(127, 207, 107, 0.14);
+  border: 1px solid rgba(127, 207, 107, 0.35);
+}
+
+
 /* ==========================================
    RESET & COLOR VARIABLES
    ========================================== */
 :root {
   --primary-color: #0b5ed7;
   --accent-color: #ff6600;
-  --bg-main: #f5f5dc;           /* Beige */
-  --text-dark: #1e293b;          /* Dark slate for readable body text */
+  --bg-main: #f5f5dc;
+  /* Beige */
+  --text-dark: #1e293b;
+  /* Dark slate for readable body text */
   --text-light: #ffffff;
   --card-dark: #0f172a;
-  --review-bg: #84cc16;          /* Vibrant Green */
+  --review-bg: #84cc16;
+  /* Vibrant Green */
   --footer-bg: #65a30d;
 }
 
@@ -25,7 +70,8 @@ html {
 
 body {
   background: var(--bg-main);
-  color: var(--text-dark); /* Fixed unreadable lemonchiffon body text */
+  color: var(--text-dark);
+  /* Fixed unreadable lemonchiffon body text */
   line-height: 1.6;
 }
 
@@ -52,12 +98,14 @@ body {
 }
 
 .overlay h1 {
-  font-size: 3.75rem; /* 60px equivalent */
+  font-size: 3.75rem;
+  /* 60px equivalent */
   font-weight: 700;
 }
 
 .overlay p {
-  font-size: 1.5rem;  /* 24px equivalent */
+  font-size: 1.5rem;
+  /* 24px equivalent */
   margin: 20px;
 }
 
@@ -105,7 +153,8 @@ h2 {
 
 .about-content img {
   width: 100%;
-  max-width: 500px; /* Fixed max-width: 200% causing screen overflow */
+  max-width: 500px;
+  /* Fixed max-width: 200% causing screen overflow */
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
@@ -188,7 +237,8 @@ h2 {
   bottom: 15px;
   left: 20px;
   color: #86efac;
-  background: rgba(15, 23, 42, 0.8); /* Dark background for text legibility */
+  background: rgba(15, 23, 42, 0.8);
+  /* Dark background for text legibility */
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -204,7 +254,8 @@ h2 {
 
 .review {
   background: var(--review-bg);
-  color: var(--text-dark); /* Fixed unreadable light text on bright green */
+  color: var(--text-dark);
+  /* Fixed unreadable light text on bright green */
   padding: 30px;
   text-align: center;
   border-radius: 10px;
@@ -231,9 +282,9 @@ footer p {
   font-weight: bold;
 }
 
-/* ==========================================
-   ANIMATIONS & BACK TO TOP BUTTON
-   ========================================== */
+/* 
+  ANIMATIONS & BACK TO TOP BUTTON
+ */
 .hidden {
   opacity: 0;
   transform: translateY(40px);

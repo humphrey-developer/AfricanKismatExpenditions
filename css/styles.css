@@ -277,5 +277,17 @@ body::after {
     min-width: 0;
   }
 }
+/* footer */
+footer {
+  background: var(--footer-bg);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-weight: bold;
+}
 
 

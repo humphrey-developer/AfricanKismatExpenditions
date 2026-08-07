@@ -1,17 +1,56 @@
 /* STEVE */
+/* Navigation styles */
+.nav-toggle {
+  display: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  margin: 1.5rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.22s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--green);
+}
+
+.nav-cta {
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  background: rgba(127, 207, 107, 0.14);
+  border: 1px solid rgba(127, 207, 107, 0.35);
+}
 
 /* Contact Section */
 #contact {
-    background: #ecebeb;
-    padding: 0px 0;
+  background: #ecebeb;
+  padding: 0px 0;
 }
 
 .contact-hero {
-  height: 400px;                
+  height: 400px;
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url('contactImages/contact-hero1.jpg');
+  background-image: url('../contactImages/contact-hero1.jpg');
   background-size: cover;
   background-position: center;
   display: grid;
@@ -84,136 +123,22 @@
   transition: background-color 0.3s;
   width: 100%;
   margin-top: 15px;
-  cursor: pointer;
   margin-bottom: 10px;
 }
 
 .contact-container button:hover {
   background-color: #00b318;
 }
-/* Header & Navbar Styles */
-header {
-  background-color: #1e293b;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+/* footer */
+footer {
+  background: var(--footer-bg);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 50px 20px;
 }
 
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+footer p {
+  margin: 10px 0;
+  font-weight: bold;
 }
-
-.logo {
-  color: #38bdf8;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 8px 12px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #38bdf8;
-}
-
-/* Dropdown Container */
-.dropdown {
-  position: relative;
-}
-
-/* Dropdown Arrow animation */
-.arrow {
-  display: inline-block;
-  font-size: 0.8rem;
-  transition: transform 0.3s ease;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1e293b;
-  min-width: 160px;
-  list-style: none;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  padding: 10px 0;
-  
-  /* Hidden by default */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.dropdown-menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #334155;
-  color: #38bdf8;
-}
-
-
-/* Desktop Hover Interaction */
-@media (hover: hover) {
-  .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .dropdown:hover .arrow {
-    transform: rotate(180deg);
-  }
-}
-
-/* JavaScript Active State (Mobile / Click Toggle) */
-.dropdown.active .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown.active .arrow {
-  transform: rotate(180deg);
-}
-
-/* Card Filtering Transitions */
-.card {
-  transition: opacity 0.4s ease, transform 0.4s ease, display 0.4s ease;
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* Class applied when a card is filtered out */
-.card.hide {
-  display: none;
-  opacity: 0;
-  transform: scale(0.8);
-}
-

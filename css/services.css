@@ -130,13 +130,14 @@ h2 {
 }
 
 /* FOOTER STYLING */
-footer p {
-  color:#eb085f;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  background-color: #1a1918;
-  font-style: italic;
+footer {
+  background: var(--footer-bg);
+  color: var(--text-dark);
   text-align: center;
+  padding: 50px 20px;
 }
 
+footer p {
+  margin: 10px 0;
+  font-weight: bold;
+}
