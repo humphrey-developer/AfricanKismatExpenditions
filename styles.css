@@ -269,7 +269,7 @@ body::after {
   .hero-actions {
     flex-direction: column;
   }
-
+/* Make buttons full width on small screens */
   .btn-primary,
   .btn-outline {
     width: 100%;
