@@ -265,7 +265,7 @@ body::after {
   .hero-content {
     padding: 3rem 0.75rem 1.5rem;
   }
-
+/* Stack hero actions vertically on small screens */
   .hero-actions {
     flex-direction: column;
   }
