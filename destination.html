@@ -1,84 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destination</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Wanderlust Travels</div>
-      
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        
-        <!-- Destinations Dropdown Item -->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="destinationsBtn">
-            Destinations <span class="arrow">&#9662;</span>
-          </a>
-          <!-- Dropdown Menu List -->
-          <ul class="dropdown-menu">
-            <li><a href="#Kenya">Kenya</a></li>
-            <li><a href="#Tanzania">Tanzania</a></li>
-            <li><a href="#South Africa">South Africa</a></li>
-            <li><a href="#Ethiopia">Ethiopia</a></li>
-            <li><a href="#Egypt">Egypt</a></li>
-          </ul>
-        </li>
+    <title>Destinations - African Kismat Expeditions</title>
+    <link rel="stylesheet" href="css/destination.css">
 
-        <li><a href="#">Packages</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Destination Cards Grid -->
-<div class="destinations-grid">
-  <!-- Card 1: France -->
-  <div class="card" data-country="france" onclick="flipCard(this)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris, France">
-        <div class="card-title">Paris, France</div>
-      </div>
-      <div class="card-back">
-        <h3>Paris, France</h3>
-        <p>Explore the City of Lights, famous for the Eiffel Tower and world-class museums.</p>
-        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
-      </div>
-    </div>
-  </div>
-  <!-- Card 2: Indonesia -->
-  <div class="card" data-country="indonesia" onclick="flipCard(this)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali, Indonesia">
-        <div class="card-title">Bali, Indonesia</div>
-      </div>
-      <div class="card-back">
-        <h3>Bali, Indonesia</h3>
-        <p>Experience tropical beaches, lush rice terraces, and ancient temples.</p>
-        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
-      </div>
-    </div>
-  </div>
-  <!-- Card 3: UAE -->
-  <div class="card" data-country="uae" onclick="flipCard(this)">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai, UAE">
-        <div class="card-title">Dubai, UAE</div>
-      </div>
-      <div class="card-back">
-        <h3>Dubai, UAE</h3>
-        <p>Discover futuristic architecture, luxury shopping, and desert safaris.</p>
-        <a href="#" class="btn" onclick="event.stopPropagation();">Explore Packages</a>
-      </div>
-    </div>
-  </div>
-</div>
+</head>
+
+<body>
+    <header class="header">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="contact.html" class="nav-cta">Plan a Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Africa's Finest Destinations</h1>
+            <p>Unforgettable safari experiences, pristine beaches, and rich cultural heritage.</p>
+            <a href="#destinations" class="btn">View Destinations</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="container about">
+        <h2 class="hidden">About Our Expeditions</h2>
+        <div class="about-content hidden">
+            <img src="../images/leopard.image.jpg" alt="Leopard in African safari">
+            <div>
+                <p>Welcome to African Kismat Expeditions. We craft tailor-made safari packages designed to bring you
+                    face-to-face with Africa's majestic wildlife and landscapes.</p>
+                <p>Whether you're seeking the thrill of the Great Migration, luxury lodge relaxation, or beach getaways,
+                    our expert team manages every detail seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="container">
+        <h2 class="hidden">What We Provide</h2>
+        <div class="service-grid">
+            <div class="card hidden">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80"
+                    alt="Game Drive Safari">
+                <h3>Custom Game Drives</h3>
+                <p>Private 4x4 safari vehicles accompanied by certified local guides.</p>
+            </div>
+            <div class="card hidden">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+                    alt="Luxury Safari Lodge">
+                <h3>Luxury Accommodation</h3>
+                <p>Hand-picked luxury tented camps and eco-resorts with prime views.</p>
+            </div>
+            <div class="card hidden">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80"
+                    alt="Seamless Flights and Transfers">
+                <h3>Seamless Transfers</h3>
+                <p>Domestic flights, airport pickups, and regional border logistics simplified.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section id="destinations" class="container">
+        <h2 class="hidden">Top Destinations</h2>
+        <div class="destination-grid">
+            <div class="place hidden">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=600&q=80"
+                    alt="Maasai Mara National Reserve">
+                <h3>Maasai Mara, Kenya</h3>
+            </div>
+            <div class="place hidden">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80"
+                    alt="Serengeti National Park">
+                <h3>Serengeti, Tanzania</h3>
+            </div>
+            <div class="place hidden">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                    alt="Zanzibar Island">
+                <h3>Zanzibar, Tanzania</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="container">
+        <h2 class="hidden">Traveler Reviews</h2>
+        <div class="review-grid">
+            <div class="review hidden">
+                <p>"The safari in Maasai Mara exceeded every expectation. Flawless planning from start to finish!"</p>
+                <strong>- James & Sarah, UK</strong>
+            </div>
+            <div class="review hidden">
+                <p>"Unbelievable experience in Serengeti. Our guide knew exactly where to locate wildlife safely."</p>
+                <strong>- Amara K., UAE</strong>
+            </div>
+            <div class="review hidden">
+                <p>"Combining a safari with Zanzibar beach relaxation was the best decision ever."</p>
+                <strong>- Michael T., USA</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 African Kismat Expeditions. All rights reserved.</p>
+        <p>Email: info@africankismat.com | Phone: +254 700 000 000</p>
+    </footer>
+
+    <script src="destination.js"></script>
 </body>
+
 </html>
