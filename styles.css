@@ -19,7 +19,7 @@ body {
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
+/* Set up the background image and overlay for the body */
 body {
   position: relative;
 }
@@ -42,7 +42,7 @@ body::after {
   pointer-events: none;
   z-index: -2;
 }
-
+/* Header and hero section styles */
 .header,
 .hero {
   position: relative;
