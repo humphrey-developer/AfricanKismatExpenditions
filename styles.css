@@ -260,7 +260,7 @@ body::after {
     margin: 2rem auto 0;
   }
 }
-
+/* Further adjustments for very small screens */
 @media (max-width: 600px) {
   .hero-content {
     padding: 3rem 0.75rem 1.5rem;
