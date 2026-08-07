@@ -4,6 +4,7 @@ A dynamic, fully responsive Travel & Tourism website designed to showcase luxury
 
 ---
 ## Authors
+
 * **Solomon** - *Home Page Section*
 * **Joyce** - *Destination Section*
 * **Beatrice** - *About Us Section*
@@ -23,6 +24,7 @@ A dynamic, fully responsive Travel & Tourism website designed to showcase luxury
 **African Kismat Expeditions** provides travelers with a modern gateway to iconic African destinations like Maasai Mara, Serengeti, and Zanzibar. Built with pure front-end web technologies, it features fast performance and seamless mobile responsiveness.
 
 ### Key Features
+
 * **Interactive 3D Cards:** Clickable destination cards with package details.
 * **Responsive Navigation:** Clean navbar with dropdown menus and mobile toggle.
 * **Scroll Animations:** Smooth reveal effects on content scroll.
@@ -32,9 +34,9 @@ A dynamic, fully responsive Travel & Tourism website designed to showcase luxury
 
 ## Technologies Used
 
-* **HTML** 
-* **CSS** 
-* **JavaScript** 
+* HTML 
+* CSS 
+* JavaScript 
 
 ---
 
