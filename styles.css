@@ -249,7 +249,7 @@ body::after {
     gap: 1rem;
     justify-content: flex-start;
   }
-
+/* Adjust hero section for smaller screens */
   .hero {
     min-height: 82vh;
     padding-top: 2.6rem;
