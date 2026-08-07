@@ -114,7 +114,7 @@ body::after {
   background: rgba(127, 207, 107, 0.14);
   border: 1px solid rgba(127, 207, 107, 0.35);
 }
-
+/* Hero section styles */
 .hero {
   min-height: 100vh;
   display: grid;
