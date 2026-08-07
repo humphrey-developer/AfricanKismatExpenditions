@@ -14,7 +14,7 @@ A dynamic, fully responsive Travel & Tourism website designed to showcase luxury
 ## Links
 
 * **Live Website:** [](https://github.com/)
-* **GitHub Repository:** [](https://github.com/)
+* **GitHub Repository:** [https://github.com/humphrey-developer/AfricanKismatExpenditions.git](https://github.com/)
 
 ---
 
